@@ -46,7 +46,7 @@ function App() {
       
                   <Route exact path="/create-user" component={(props) => <CreateUer {...props} />} />
                 
-                  <Route exact path="/edit-student/:id" component={(props) => <EditUser {...props} />} />
+                  <Route exact path="/edit-user/:id" component={(props) => <EditUser {...props} />} />
                   
                   <Route exact path="/user-list" component={(props) => <UserList {...props} />} />
                   

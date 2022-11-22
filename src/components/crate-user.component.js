@@ -1,3 +1,5 @@
+
+//
 import React, {Component} from "react"; /*component es una clase de react*/
 import Form from "react-bootstrap/Form"//etiqueta para formularios
 import Button from "react-bootstrap/Button";
@@ -76,9 +78,9 @@ export default class CreateUser extends Component{ //En este componente se va a 
         
         axios
             .post("http://localhost:4000/users/create-user", studentObject)
-            .then((res) => console.log(res.data));
-        
-        this.setState({nombre:"",apellido:"",correo:"",password:"",admin:"",estado:"",avatar:"",descripcion:""});    
+            .then((res) => console.log(res.data));  
+            window.location.href = "/user-list";     
+        this.setState({nombre:"",apellido:"",correo:"",password:"",admin:"",estado:"",avatar:"",descripcion:""});
     } 
 
     render(){

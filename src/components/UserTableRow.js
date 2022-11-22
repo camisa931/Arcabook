@@ -9,16 +9,16 @@ export default class UserTableRow extends Component{
         this.deleteUser = this.deleteUser.bind(this);
     }
 
-    deleteStudent(){
+    deleteUser(){
         axios
             .delete("http://localhost:4000/users/delete-user/" + this.props.obj._id)
             .then((res) => {
                 console.log("Usuario eliminiado con tristeza");
+                window.location.href = "/user-list";
             })
             .catch((error) => {
                 console.log(error);
             });
-        this.props.history.push("/user-list");//esta linea se agrego para hacer una prueba
     }
 
 

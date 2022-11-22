@@ -32,7 +32,7 @@ export default class userList extends Component{
 
     render(){
         return(
-            <div className="table-wrapper">
+            <div>
                 <Table striped bordered hover>
                     <thead>
                         <tr>

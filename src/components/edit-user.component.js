@@ -43,6 +43,7 @@ export default class editUser extends Component{
                     avatar:res.data.avatar,
                     descripcion:res.data.descripcion,
                 });
+            
             })
             .catch((error) => {
                 console.log(error);
@@ -100,12 +101,13 @@ export default class editUser extends Component{
             .then((res) => {
                 console.log(res.data);
                 console.log("Usuario actualizado con éxito!");
+            this.props.history.push("/user-list");
             })
             .catch((error) => {
                 console.log(error);
             });
-        
-        this.props.history.push("/user-list");
+        //this.props.hisyoty.push("/");
+        //this.props.history.push("/user-list");
     }
 
     render(){
@@ -185,7 +187,7 @@ export default class editUser extends Component{
                             onChange={this.onChangeUserDescripcion}
                         />
                     </Form.Group>
-
+                    <br/>
                     <Button variant="danger" size="lg" block="block" type="submit">
                         Actualizar usuario
                     </Button>

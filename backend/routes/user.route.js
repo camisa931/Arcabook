@@ -1,7 +1,11 @@
+// redireccionar
+
 let mongoose = require("mongoose"),
     express = require("express"),
     router = express.Router();
 let userSchema = require("../models/User");  //objero modelo user
+
+
 
 //ruta crear usuarios
 router.route("/create-user").post((req, res, next)=>{
