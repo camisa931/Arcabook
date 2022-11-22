@@ -4,6 +4,9 @@ let cors = require("cors");
 let bodyParser = require("body-parser");
 
 const studentRoute = require("../backend/routes/student.route");
+const userRoute = require("../backend/routes/user.route");
+const bookRoute = require("../backend/routes/book.route");
+
 const  db = require("../backend/database/db").mongoURI;
 
 
@@ -21,6 +24,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(cors());
 app.use("/students",studentRoute);
+app.use("/users", userRoute);
+app.use("/books", bookRoute);
 
 const port = process.env.PORT || 4000; //aqui se establece el puerto en el que trabaja la aplicacion
 const server = app.listen(port,()=>{

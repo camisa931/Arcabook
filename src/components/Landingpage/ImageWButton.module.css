@@ -1,0 +1,22 @@
+.imagewbutton {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin: 0;
+}
+
+.imagewbutton img {
+    vertical-align: bottom;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.imagewbutton Button {
+    position: absolute;
+    top: 47%;
+    left: 46%;
+}

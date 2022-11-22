@@ -1,0 +1,46 @@
+.background {
+    align-content: center;
+}
+
+.background .bg_img {
+    vertical-align: bottom;
+    width: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.background .bg_square {
+    vertical-align: bottom;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 1/1;
+    background-color: #4E9FD9;
+    color: white;
+}
+
+.background ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.background li {
+    font-size: 4.5rem;
+    padding-bottom: 0.6rem;
+}
+
+.background p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.background .bg_square:nth-of-type(2n) {
+    background-color: #EC7560;
+}

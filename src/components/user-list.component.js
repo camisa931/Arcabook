@@ -1,22 +1,22 @@
 import React, {Component} from "react"; /*component es una clase de react*/
 import axios from "axios";
 import Table from "react-bootstrap/Table";
-import StudentTableRow from "./StudentTableRow";
+import UserTableRow from "./UserTableRow";
 
-export default class studentList extends Component{
+export default class userList extends Component{
     constructor(props){
         super(props);
         this.state = {
-            student: [],
+            user: [],
         };
     }
 
     componentDidMount(){
         axios
-            .get("http://localhost:4000/student")
+            .get("http://localhost:4000/users")
             .then((res) => {
                 this.setState({
-                    student: res.data,
+                    user: res.data,
                 });
             })
             .catch((error) => {
@@ -25,8 +25,8 @@ export default class studentList extends Component{
     }
 
     DataTable(){
-        return this.state.student.map((res, i) => {
-            return <StudentTableRow obj={res} key={i}/>;
+        return this.state.user.map((res, i) => {
+            return <UserTableRow obj={res} key={i}/>;
         });
     }
 
@@ -37,8 +37,13 @@ export default class studentList extends Component{
                     <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>Correo electrónico</th>
-                            <th>Código</th>
+                            <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Password</th>
+                            <th>Admin</th>
+                            <th>Estado</th>
+                            <th>Avatar</th>
+                            <th>Descripción</th>
                             <th>Acción</th>
                         </tr>
                     </thead>

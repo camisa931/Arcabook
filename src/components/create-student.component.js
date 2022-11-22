@@ -79,6 +79,7 @@ export default class CreateStudent extends Component{ //En este componente se va
                         Crear Estudiante
                     </Button>
                 </Form>
+                <br/><br/><br/>
             </div>
         );
     }
