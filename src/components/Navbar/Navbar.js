@@ -22,12 +22,22 @@ const Navbar = (props) => {
             <ul>
                 <li>
                     <Link to={"/create-user"} className="nav-link">
-                        Registrar Usuarios
+                        Nuevo Usuarios
                     </Link>
                 </li>
                 <li>
                     <Link to={"/user-list"} className="nav-link">
-                        Listar Usuarios
+                        Usuarios
+                    </Link>
+                </li>
+                <li>
+                    <Link to={"/create-book"} className="nav-link">
+                        Nuevo Libro
+                    </Link>
+                </li>
+                <li>
+                    <Link to={"/book-list"} className="nav-link">
+                        Libros
                     </Link>
                 </li>
             </ul>

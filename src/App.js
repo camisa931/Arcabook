@@ -19,10 +19,15 @@ import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 //import EditStudent from "./components/edit-student.component";
 //import studentList from "./components/student-list.component";
 
-//
-import CreateUer from "./components/crate-user.component";
+// usuarios
+import CreateUser from "./components/crate-user.component";
 import UserList from "./components/user-list.component";
 import EditUser from "./components/edit-user.component";
+
+//books
+import CreateBook from "./components/create-book.component";
+import BookList from "./components/book-list.component";
+import EditBook from "./components/edit-book.component"
 
 import Aracabook from "./components/arcabook-component";
 import Footer from "./components/Footer/Footer";
@@ -43,12 +48,14 @@ function App() {
               <div className='wrapper'>
                 <Switch>
                   <Route exact path="/" component={(props) => <Aracabook {...props} />} /> 
-      
-                  <Route exact path="/create-user" component={(props) => <CreateUer {...props} />} />
-                
+
+                  <Route exact path="/create-user" component={(props) => <CreateUser {...props} />} />
                   <Route exact path="/edit-user/:id" component={(props) => <EditUser {...props} />} />
-                  
                   <Route exact path="/user-list" component={(props) => <UserList {...props} />} />
+
+                  <Route exact path="/create-book" component={(props) => <CreateBook {...props} />} />
+                  <Route exact path="/edit-book/:id" component={(props) => <EditBook {...props} />} />
+                  <Route exact path="/book-list" component={(props) => <BookList {...props} />} />
                   
                 </Switch>
               </div>

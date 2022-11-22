@@ -153,7 +153,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Button variant="danger" size="lg" block="block" type="submit" className="mt-4">
-                        Crear usuario
+                        Nuevo usuario
                     </Button>
                 </Form>
                 <br/><br/><br/>

@@ -16,7 +16,7 @@ router.route("/create-book").post((req, res, next)=>{
 });
 
 //leer books
-router.route("/book").get((req, res, next)=>{
+router.route("/").get((req, res, next)=>{
     bookSchema.find((error, data)=>{
         if(error){
             return next(error);
@@ -50,7 +50,7 @@ router.route("/update-book/:id").put((req, res, next)=>{
                 return next(error);
             }else{
                 res.json(data);
-                console.log("usuario actualizado con éxito");
+                console.log("Libro actualizado con éxito");
             }            
         }
     );
