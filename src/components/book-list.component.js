@@ -46,7 +46,7 @@ export default class bookList extends Component{
                             <th>Caratula</th>
                             <th>Descripcion</th>
                             <th>Genero</th>
-                            <th>Disponible</th>
+                            <th><b>Disponible</b></th>
                             <th>Acción</th>
                         </tr>
                     </thead>

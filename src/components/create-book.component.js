@@ -133,10 +133,11 @@ export default class CreateBook extends Component{ //En este componente se va a 
                             onChange={this.onChangeBookEditorial}/>
                     </Form.Group>
 
-                    <Form.Group controlId="Eecha_edicion">
+                    <Form.Group controlId="Fecha_edicion">
+                        <input type="file" />
                         <Form.Label> <b>Fecha edicion</b> </Form.Label>
                         <Form.Control 
-                            type="text"
+                            type="date"
                             value={this.state.fecha_edicion}
                             onChange={this.onChangeBookFechaedicion}/>
                     </Form.Group>
@@ -191,10 +192,13 @@ export default class CreateBook extends Component{ //En este componente se va a 
 
                     <Form.Group controlId="Disponible">
                         <Form.Label> <b>Disponible</b> </Form.Label>
-                        <Form.Control 
-                            type="text"
+                        <Form.Select 
+                            //type="boolean"
                             value={this.state.disponible}
-                            onChange={this.onChangeBookDisponible}/>
+                            onChange={this.onChangeBookDisponible}>
+                                <option value={true}>Disponible</option>
+                                <option value={false}>No disponible</option>
+                        </Form.Select>
                     </Form.Group>
 
                     <Button variant="danger" size="lg" block="block" type="submit" className="mt-4">
