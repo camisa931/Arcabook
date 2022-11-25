@@ -35,7 +35,7 @@ export default class BookTableRow extends Component{
                 <td>{this.props.obj.caratula}</td>
                 <td>{this.props.obj.descripcion}</td>
                 <td>{this.props.obj.genero}</td>
-                <td>{this.props.obj.disponible}</td>
+                <td>{this.props.obj.disponible?'Si':'No'}</td>
                 <td>
                     <Link
                         className="edit-link"

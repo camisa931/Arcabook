@@ -115,7 +115,7 @@ export default class editUser extends Component{
             <div className="form-wrapper">
                 <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="Nombre">
-                        <Form.Label>Nombre</Form.Label>
+                        <Form.Label><b>Nombre</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.nombre}
@@ -123,7 +123,7 @@ export default class editUser extends Component{
                         />
                     </Form.Group>
                     <Form.Group controlId="Apellido">
-                        <Form.Label>Apellido</Form.Label>
+                        <Form.Label><b>Apellido</b></Form.Label>
                         <Form.Control
                             type="apellido"
                             value={this.state.apellido}
@@ -131,7 +131,7 @@ export default class editUser extends Component{
                         />
                     </Form.Group>
                     <Form.Group controlId="Correo">
-                        <Form.Label>Correo</Form.Label>
+                        <Form.Label><b>Correo</b></Form.Label>
                         <Form.Control
                             type="text"
                             value={this.state.correo}
@@ -140,7 +140,7 @@ export default class editUser extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Password">
-                        <Form.Label>Password</Form.Label>
+                        <Form.Label><b>Password</b></Form.Label>
                         <Form.Control
                             type="text"
                             value={this.state.password}
@@ -150,17 +150,19 @@ export default class editUser extends Component{
 
 
                     <Form.Group controlId="Admin">
-                        <Form.Label>Admin</Form.Label>
-                        <Form.Control
-                            type="text"
-                            value={this.state.admin}
-                            onChange={this.onChangeUserAdmin}
-                        />
+                        <Form.Label><b>Admin</b></Form.Label>
+                        <Form.Select 
+                            type="boolean"
+                            value={this.state.disponible}
+                            onChange={this.onChangeUserAdmin}>
+                                <option value={true}>Disponible</option>
+                                <option value={false}>No disponible</option>
+                        </Form.Select>
                     </Form.Group>
 
 
                     <Form.Group controlId="Estado">
-                        <Form.Label>Estado</Form.Label>
+                        <Form.Label><b>Estado</b></Form.Label>
                         <Form.Control
                             type="text"
                             value={this.state.estado}
@@ -170,7 +172,7 @@ export default class editUser extends Component{
 
 
                     <Form.Group controlId="Avatar">
-                        <Form.Label>Avatar</Form.Label>
+                        <Form.Label><b>Avatar</b></Form.Label>
                         <Form.Control
                             type="text"
                             value={this.state.avatar}
@@ -180,7 +182,7 @@ export default class editUser extends Component{
 
 
                     <Form.Group controlId="Descripción">
-                        <Form.Label>Descripción</Form.Label>
+                        <Form.Label><b>Descripción</b></Form.Label>
                         <Form.Control
                             type="text"
                             value={this.state.descripcion}

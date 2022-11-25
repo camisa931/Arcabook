@@ -139,7 +139,7 @@ export default class editBook extends Component{
                 <Form onSubmit={this.onSubmit}>
 
                     <Form.Group controlId="Iduser">
-                        <Form.Label> Iduser </Form.Label>
+                        <Form.Label><b>Iduser</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.iduser}
@@ -147,7 +147,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Titulo">
-                        <Form.Label> Titulo </Form.Label>
+                        <Form.Label><b>Titulo</b></Form.Label>
                         <Form.Control 
                             type="apellido"
                             value={this.state.titulo}
@@ -155,7 +155,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Editorial">
-                        <Form.Label> Editorial </Form.Label>
+                        <Form.Label><b>Editorial</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.editorial}
@@ -163,7 +163,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Eecha_edicion">
-                        <Form.Label> Fecha_edicion </Form.Label>
+                        <Form.Label><b>Fecha edicion</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.fecha_edicion}
@@ -171,7 +171,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Paginas">
-                        <Form.Label> Paginas </Form.Label>
+                        <Form.Label><b>Paginas</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.paginas}
@@ -179,7 +179,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Autor">
-                        <Form.Label> Autor </Form.Label>
+                        <Form.Label><b>Autor</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.autor}
@@ -187,7 +187,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Estado">
-                        <Form.Label> Estado </Form.Label>
+                        <Form.Label><b>Estado</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.estado}
@@ -195,7 +195,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Caratula">
-                        <Form.Label> Caratula </Form.Label>
+                        <Form.Label><b>Caratula</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.caratula}
@@ -203,7 +203,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Descripcion">
-                        <Form.Label> Descripcion </Form.Label>
+                        <Form.Label><b>Descripcion</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.descripcion}
@@ -211,7 +211,7 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Genero">
-                        <Form.Label> Genero </Form.Label>
+                        <Form.Label><b>Genero</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.genero}
@@ -219,11 +219,14 @@ export default class editBook extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="Disponible">
-                        <Form.Label> Disponible </Form.Label>
-                        <Form.Control 
-                            type="Boolean"
+                        <Form.Label><b>Disponible</b></Form.Label>
+                        <Form.Select 
+                            type="boolean"
                             value={this.state.disponible}
-                            onChange={this.onChangeBookDisponible}/>
+                            onChange={this.onChangeBookDisponible}>
+                                <option value={true}>Disponible</option>
+                                <option value={false}>No disponible</option>
+                        </Form.Select>
                     </Form.Group>
 
                     <br/>

@@ -29,7 +29,7 @@ export default class UserTableRow extends Component{
                 <td>{this.props.obj.apellido}</td>
                 <td>{this.props.obj.correo}</td>
                 <td>{this.props.obj.password}</td>
-                <td>{this.props.obj.admin}</td>
+                <td>{this.props.obj.admin?'Si':'No'}</td>
                 <td>{this.props.obj.estado}</td>
                 <td>{this.props.obj.avatar}</td>
                 <td>{this.props.obj.descripcion}</td>
