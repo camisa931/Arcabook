@@ -89,7 +89,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                 <Form onSubmit={this.onSubmit}>
 
                     <Form.Group controlId="Nombre">
-                        <Form.Label> Nombre </Form.Label>
+                        <Form.Label> <b>Nombre</b> </Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.nombre}
@@ -97,7 +97,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Apellido">
-                        <Form.Label> Apellido </Form.Label>
+                        <Form.Label> <b>Apellido</b> </Form.Label>
                         <Form.Control 
                             type="apellido"
                             value={this.state.apellido}
@@ -105,7 +105,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Correo">
-                        <Form.Label> Correo </Form.Label>
+                        <Form.Label> <b>Correo</b></Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.correo}
@@ -113,7 +113,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Password">
-                        <Form.Label> Password </Form.Label>
+                        <Form.Label> <b>Password</b> </Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.password}
@@ -121,7 +121,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Admin">
-                        <Form.Label> Admin </Form.Label>
+                        <Form.Label> <b>Admin</b> </Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.admin}
@@ -129,7 +129,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Estado">
-                        <Form.Label> Estado </Form.Label>
+                        <Form.Label> <b>Estado</b> </Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.estado}
@@ -137,7 +137,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Avatar">
-                        <Form.Label> Avatar </Form.Label>
+                        <Form.Label> <b>Avatar</b> </Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.avatar}
@@ -145,7 +145,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Form.Group controlId="Descripcion">
-                        <Form.Label> Descripcion </Form.Label>
+                        <Form.Label> <b>Descripción</b> </Form.Label>
                         <Form.Control 
                             type="text"
                             value={this.state.descripcion}
@@ -153,7 +153,7 @@ export default class CreateUser extends Component{ //En este componente se va a 
                     </Form.Group>
 
                     <Button variant="danger" size="lg" block="block" type="submit" className="mt-4">
-                        Nuevo usuario
+                        Registrar nuevo usuario
                     </Button>
                 </Form>
                 <br/><br/><br/>

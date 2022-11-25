@@ -135,7 +135,7 @@ export default class editBook extends Component{
 
     render(){
         return(
-            <div className="form-wrapper">
+            <div className="form-wrapper" style="color: blue;">
                 <Form onSubmit={this.onSubmit}>
 
                     <Form.Group controlId="Iduser">

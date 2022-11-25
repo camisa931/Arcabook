@@ -1,6 +1,6 @@
 import React from 'react';
 //import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+//import Nav from "react-bootstrap/Nav";
 
 /*/
 
@@ -14,7 +14,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"; /*Esto se importo paa crear los elemnetos rapidamente*/ 
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom"; // al final habia ,Link
 //import CreateStudent from "./components/create-student.component";
 //import EditStudent from "./components/edit-student.component";
 //import studentList from "./components/student-list.component";
@@ -27,7 +27,7 @@ import EditUser from "./components/edit-user.component";
 //books
 import CreateBook from "./components/create-book.component";
 import BookList from "./components/book-list.component";
-import EditBook from "./components/edit-book.component"
+import EditBook from "./components/edit-book.component";
 
 import Aracabook from "./components/arcabook-component";
 import Footer from "./components/Footer/Footer";
